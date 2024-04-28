@@ -1,0 +1,57 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--dark-blue);
+  color: var(--light-cyan);
+  font-size: 28px;
+}
+.container {
+  background-color: var(--dark-grayish-blue);
+  position: relative;
+  padding: 80px;
+}
+h1 {
+  color: var(--neon-green);
+  font-size: small;
+  margin-bottom: 10px;
+}
+.circle {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 43%;
+  top: 88%;
+  cursor: pointer;
+  border: none;
+}
+.circle:hover {
+  box-shadow: 0 0 20px 10px var(--neon-green);
+}
+
+.dice {
+  width: 30px;
+}
+.main {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  text-align: center;
+}
+.divide {
+  width: 80%;
+}
